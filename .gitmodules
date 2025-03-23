@@ -1,0 +1,9 @@
+[submodule "TaskBoard.Authenticator.Boot"]
+	path = TaskBoard.Authenticator.Boot
+	url = https://github.com/niolikon/TaskBoard.Authenticator.Boot
+[submodule "TaskBoard.Framework.Boot"]
+	path = TaskBoard.Framework.Boot
+	url = https://github.com/niolikon/TaskBoard.Framework.Boot
+[submodule "TaskBoard.Service.Boot"]
+	path = TaskBoard.Service.Boot
+	url = https://github.com/niolikon/TaskBoard.Service.Boot

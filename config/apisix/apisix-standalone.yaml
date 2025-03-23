@@ -1,0 +1,20 @@
+---
+routes:
+  - uri: /api/Auth/*
+    name: auth-api-route
+    plugins:
+      cors: {}
+    upstream:
+      type: roundrobin
+      nodes:
+        "taskboard-authenticator-boot:8080": 1
+
+  - uris: ["/api/Todos", "/api/Todos/*"]
+    name: todos-api-route
+    plugins:
+      cors: {}
+    upstream:
+      type: roundrobin
+      nodes:
+        "taskboard-service-boot:8080": 1
+#END
