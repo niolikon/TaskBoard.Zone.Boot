@@ -52,7 +52,7 @@ services:
       - backend-network
 
   taskboard-service-boot:
-    image: ghcr.io/niolikon/taskboard-service-boot:0.0.1
+    image: ghcr.io/niolikon/taskboard-service-boot:0.0.3
     container_name: taskboard-service-boot
     restart: always
     depends_on:
@@ -96,6 +96,21 @@ services:
       - "9180:9180/tcp"
     networks:
       - backend-network
+
+  taskboard-app-ng:
+    image: ghcr.io/niolikon/taskboard-app-ng:0.0.1
+    container_name: taskboard-app-ng
+    restart: always
+    depends_on:
+      - taskboard-apisix-boot
+    env_file:
+      - .env
+    environment:
+      TASKBOARD_BACKEND_BASEURL: ${BACKEND_BASEURL}
+    networks:
+      - backend-network
+    ports:
+      - "80:80/tcp"
 
 volumes:
   service-storage:

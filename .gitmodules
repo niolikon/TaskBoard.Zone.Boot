@@ -7,3 +7,6 @@
 [submodule "TaskBoard.Service.Boot"]
 	path = TaskBoard.Service.Boot
 	url = https://github.com/niolikon/TaskBoard.Service.Boot
+[submodule "TaskBoard.App.Ng"]
+	path = TaskBoard.App.Ng
+	url = https://github.com/niolikon/TaskBoard.App.Ng
