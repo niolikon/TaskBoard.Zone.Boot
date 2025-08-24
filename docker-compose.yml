@@ -52,7 +52,7 @@ services:
       - backend-network
 
   taskboard-service-boot:
-    image: ghcr.io/niolikon/taskboard-service-boot:0.0.4
+    image: ghcr.io/niolikon/taskboard-service-boot:0.1.2
     container_name: taskboard-service-boot
     restart: always
     depends_on:
@@ -70,7 +70,7 @@ services:
       - backend-network
 
   taskboard-authenticator-boot:
-    image: ghcr.io/niolikon/taskboard-authenticator-boot:0.0.2
+    image: ghcr.io/niolikon/taskboard-authenticator-boot:0.1.1
     container_name: taskboard-authenticator-boot
     restart: always
     depends_on:
@@ -98,7 +98,7 @@ services:
       - backend-network
 
   taskboard-app-ng:
-    image: ghcr.io/niolikon/taskboard-app-ng:0.0.2
+    image: ghcr.io/niolikon/taskboard-app-ng:0.1.2
     container_name: taskboard-app-ng
     restart: always
     depends_on:
