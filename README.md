@@ -12,6 +12,7 @@ Task Board (Scalable WebApp Case Study)
 This repository orchestrates the following microservices and frontend via Git submodules:
 
 - 🔐 [TaskBoard.Authenticator.Boot](https://github.com/niolikon/TaskBoard.Authenticator.Boot)
+- 📁 [TaskBoard.DropStack.Boot](https://github.com/niolikon/TaskBoard.DropStack.Boot)
 - 🧱 [TaskBoard.Framework.Boot](https://github.com/niolikon/TaskBoard.Framework.Boot)
 - 📌 [TaskBoard.Service.Boot](https://github.com/niolikon/TaskBoard.Service.Boot)
 - 🌐 [TaskBoard.App.Ng](https://github.com/niolikon/TaskBoard.App.Ng)

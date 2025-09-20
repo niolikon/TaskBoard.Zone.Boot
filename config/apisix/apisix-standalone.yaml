@@ -17,4 +17,13 @@ routes:
       type: roundrobin
       nodes:
         "taskboard-service-boot:8080": 1
+
+  - uris: ["/api/Documents", "/api/Documents/*"]
+    name: documents-api-route
+    plugins:
+      cors: {}
+    upstream:
+      type: roundrobin
+      nodes:
+        "taskboard-dropstack-boot:8080": 1
 #END

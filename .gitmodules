@@ -10,3 +10,6 @@
 [submodule "TaskBoard.App.Ng"]
 	path = TaskBoard.App.Ng
 	url = https://github.com/niolikon/TaskBoard.App.Ng
+[submodule "TaskBoard.DropStack.Boot"]
+	path = TaskBoard.DropStack.Boot
+	url = https://github.com/niolikon/TaskBoard.DropStack.Boot
