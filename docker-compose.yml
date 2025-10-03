@@ -167,7 +167,7 @@ services:
     restart: "no"
 
   taskboard-dropstack-boot:
-    image: taskboard-dropstack-boot:latest
+    image: ghcr.io/niolikon/taskboard-dropstack-boot:0.0.1
     container_name: taskboard-dropstack-boot
     build:
       context: .
